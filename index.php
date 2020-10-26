@@ -71,7 +71,6 @@ for($i = 1; $i < 21; $i++){
     array_push($music_set_all, $n.'/'.$temp[$rand_key]);
 }
 
-// echo $blues;
 ?>
 
 <!DOCTYPE html>
@@ -86,12 +85,6 @@ for($i = 1; $i < 21; $i++){
     <link rel="stylesheet" href="style.css">
 </head>
 
-<pre>
-<?php print_r($user_laten_pair); ?>
-<?php print_r($music_set_all); ?>
-<?php print_r($image_set); ?>
-</pre>
-
 <body class="d-flex flex-column h-100">
 
     <header class="header">
@@ -104,40 +97,83 @@ for($i = 1; $i < 21; $i++){
         <?php
         if($uid > 0){ ?>
 
-            <div class="row">
-                <div class="col">
+        <div class="row">
+            <div class="col">
 
-                    <?php ?>
+                <form action="" method="post" id="experiment-form">
+
+                    <input type="hidden" id="user-id" name="user-id" value="<?php echo $uid ?>">
+
                     <?php foreach($user_laten_pair as $key => $pair){ ?>
+                    
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-md-6 col-sm-12">
-                                <img src="img/<?php echo $image_set[$pair[0]-1]; ?>" class="card-img" alt="">
+                                <img src="img/<?php echo $image_set[$pair[0]-1]; ?>" class="card-img" alt="" data-toggle="modal" data-target="#image-modal" data-image="img/<?php echo $image_set[$pair[0]-1]; ?>" data-title="Question <?php echo $key+1; ?>">
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="card-body">
                                     <h5 class="card-title">Question <?php echo $key+1; ?></h5>
-                                    <p class="card-text">Please Describe the image after listening to the music for at least 30s</p>
+                                    <p class="card-text">Please Describe the image after listening to the music for at least 30s.</p>
                                     <p class="card-text">
                                         <audio controls loop>
                                             <source src="music/<?php echo $music_set_all[$pair[1]-1]; ?>" type="audio/wav">
                                             Your browser does not support the audio element.
                                         </audio> 
                                     </p>
-                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    <p class="card-text">
+                                        <div class="form-group">
+                                            <input type="hidden" id="question-<?php echo $key+1; ?>-image" name="question-<?php echo $key+1; ?>-image" value="<?php echo $image_set[$pair[0]-1]; ?>">
+                                            <input type="hidden" id="question-<?php echo $key+1; ?>-music" name="question-<?php echo $key+1; ?>-music" value="<?php echo $music_set_all[$pair[1]-1]; ?>">
+                                            <label for="question-<?php echo $key+1; ?>-description">Please Describe the image in this question.</label>
+                                            <textarea class="form-control" name="question-<?php echo $key+1; ?>-description" id="question-<?php echo $key+1; ?>-description" rows="3" required></textarea>
+                                        </div>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                     <?php } ?> 
+
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <p class="card-text">Please make sure you have filled all the qustion before submitting</p>
+                            <input type="submit" name="submit" class="btn btn-primary" id="submit-btn" value="Submit" />
+                        </div>
+                    </div>
                 
-                
+                </form>
+            
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" id="image-modal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <img class="modal-img" src="" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+ 
                 </div>
             </div>
+        </div>
 
 
 
         <?php } else { ?>
+
         <div class="row">
             <div class="col">
                 <div class="alert alert-danger" role="alert">
@@ -148,7 +184,20 @@ for($i = 1; $i < 21; $i++){
                 </div>  
             </div>
         </div>
+
         <?php } ?>
+
+        <div class="d-none" id="complete">
+            <div class="row">
+                <div class="col">
+                    <div class="alert alert-success" role="alert">
+                        <h1 class="alert-heading">Experiment Complete</h1>
+                        <p>Thank you for participating in this experiment.</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer class="footer mt-auto py-3">
@@ -162,10 +211,32 @@ for($i = 1; $i < 21; $i++){
     </footer>
 
     <!-- jQuery and JS bundle w/ Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
 </body>
 
 </html>
+
+
+<!-- 
+
+
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+ -->
