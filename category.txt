@@ -1,0 +1,17 @@
+Images:
+1 yakusha-e(prints of actors)
+2 bijin-ga(beauties)
+3 meisho-e(landscapes)
+4 monogatari-e (stories)
+
+Genre
+1 Blues
+2 Classical
+3 Country
+4 Hip Hop
+5 Jazz
+6 Pop
+7 Rock
+8 Disco
+9 Metal
+10 Reggae

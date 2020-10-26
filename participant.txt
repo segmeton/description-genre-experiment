@@ -1,0 +1,38 @@
+Main
+1 Fajar
+2 Nowshin
+3 TJ
+4 Xincheng Dai (Bobby)
+5 Zhang
+6
+7
+8
+9 Fujimaki
+10 Toma
+
+Backup
+1
+2
+3
+
+International
+1 M2: Fajar Dewantoro Mury
+2 M2: Nowshin Faiza Alam
+3 M2: Thanat Jumneanbun
+4 M1: Tannop Sangvanloy
+5 M1: Jaturawit Chaiwong
+
+Japanese
+1 M2: 問馬 樹 (Tatsuki Toma)
+2 M2: 野口 隼 (Hayato Noguchi)
+3 M2: 井上 秀保 (Hideyasu Inoue) 
+4 M1: 吉野 創平 (Sohei Kino)
+5 M1: 辻野 幸希 (Koki Tsujino)
+6 M1: 藤巻 恵太 (Keita Fujimaki)
+7 UG: 伊藤 聡子 (Satoko Ito)
+
+Chinese
+1 M1: Yiming Zhang
+2 M1: Xincheng Dai
+3 UG: JIA Hao
+4 UG: Luo Yiming
