@@ -60,6 +60,8 @@ $laten_pair = array(
 $user_laten_pair = $laten_pair[$uid-1];
 shuffle($user_laten_pair);
 
+$count = count($user_laten_pair);
+
 $image_set = array_slice(scandir('img'), 2);
 $music_set_all = array();
 
@@ -114,7 +116,7 @@ for($i = 1; $i < 21; $i++){
                             <div class="col-md-6 col-sm-12">
                                 <div class="card-body">
                                     <h5 class="card-title">Question <?php echo $key+1; ?></h5>
-                                    <p class="card-text">Please Describe the image after listening to the music for at least 30s.</p>
+                                    <p class="card-text">Please <strong class="text-red">describe</strong> the image on this question <strong class="text-red">after</strong> listening to the music below for at least 30s.</p>
                                     <p class="card-text">
                                         <audio controls loop>
                                             <source src="music/<?php echo $music_set_all[$pair[1]-1]; ?>" type="audio/wav">
@@ -135,6 +137,34 @@ for($i = 1; $i < 21; $i++){
                     </div>
                     
                     <?php } ?> 
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Question <?php echo $count+1; ?></h5>
+                            <p class="card-text">
+                                <div class="form-group">
+                                    <label for="most-fav-music">Please tell us <strong class="text-red">music on which question</strong> you <strong class="text-red">like</strong> the most</label>
+                                    <input type="text" class="form-control" id="most-fav-music" name="most-fav-music" required>
+                                    <label for="most-fav-music-reason">Please tell us your reason (if any).</label>
+                                    <textarea class="form-control" name="most-fav-music-reason" id="most-fav-music-reason" rows="3"></textarea>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Question <?php echo $count+2; ?></h5>
+                            <p class="card-text">
+                                <div class="form-group">
+                                    <label for="least-fav-music">Please tell us <strong class="text-red">music on which question</strong> you <strong class="text-red">do not like</strong> the most</label>
+                                    <input type="text" class="form-control" id="least-fav-music" name="least-fav-music" required>
+                                    <label for="least-fav-music-reason">Please tell us your reason (if any).</label>
+                                    <textarea class="form-control" name="least-fav-music-reason" id="least-fav-music-reason" rows="3"></textarea>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
 
                     <div class="card text-center">
                         <div class="card-body">
@@ -160,7 +190,7 @@ for($i = 1; $i < 21; $i++){
                     <div class="modal-body">
                         <div class="row">
                             <div class="col">
-                                <img class="modal-img" src="" alt="">
+                                <img class="modal-img img-fluid" src="" alt="">
                             </div>
                         </div>
                         
