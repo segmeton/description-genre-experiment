@@ -96,7 +96,7 @@ if(isset($_GET['uid'])){
         </div>
     </header>
 
-    <main class="container">
+    <main class="container-fluid">
         <?php
         if($uid > 0){ ?>
 
@@ -106,6 +106,14 @@ if(isset($_GET['uid'])){
                 <form action="" method="post" id="experiment-form">
 
                     <input type="hidden" id="user-id" name="user-id" value="<?php echo $uid ?>">
+
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h1>JUSTIN Experiment</h1>
+                            <h2 class="card-text">Please describe the image on questions below.</h2>
+                            <h2 class="card-text">During anwering, please remember the music you <span class="text-danger">like</span> the most and <span class="text-danger">do not like</span> the most</h2>
+                        </div>
+                    </div>
 
                     <?php foreach($user_laten_pair as $key => $pair){ ?>
                     
@@ -249,25 +257,3 @@ if(isset($_GET['uid'])){
 </body>
 
 </html>
-
-
-<!-- 
-
-
-    <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
- -->
