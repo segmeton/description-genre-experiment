@@ -1,0 +1,65 @@
+user-id : 2
+question-1-image : mid_00530983_001.11.jpg
+question-1-music : 2/classical.00019.4.wav
+question-1-description : ชาวบ้านที่อยู่ในชุมชนบนเขา มีความเรียบง่าย ในการใช้ชีวิต
+question-2-image : mid_00611816_001.16.jpg
+question-2-music : 7/rock.00064.10.wav
+question-2-description : หญิงสาว และ ผู้ชาย กำลังจับจะจับกลุ่มเพื่อนั่งคุยกันเกี่ยวกับเรื่องที่สนุกสนาน
+question-3-image : mid_00602826_001.15.jpg
+question-3-music : 6/pop.00023.4.wav
+question-3-description : ชายฉกรรจ์ หลายคน ๆ กำลังฮึกเหิม จากการทำอะไรบางอย่าง เช่นการล่าสัตว์ จากสัตว์ในรูปที่ถูกมัดขา
+question-4-image : mid_00327154_001.3.jpg
+question-4-music : 4/hiphop.00072.15.wav
+question-4-description : เป็นการต่อสู้ที่รู้สึกได้เปรียบ หรือ มีความมั่นใจ
+question-5-image : mid_00513107_001.8.jpg
+question-5-music : 9/metal.00062.10.wav
+question-5-description : การแสดงของวัฒนธรรมญี่ปุ่น
+question-6-image : mid_00588993_001.13.jpg
+question-6-music : 4/hiphop.00057.11.wav
+question-6-description : หัวของหญิงสาว ที่ถูกตัดมา อาจจะเป็นศีรษะที่เอาไว้ลำลึก หรือ เป็นพิธีกรรมบางอย่าง
+question-7-image : mid_00423991_001.6.jpg
+question-7-music : 7/rock.00063.9.wav
+question-7-description : ผู้หญิงที่ต้องดูสวยตลอดเวลาเพื่อผู้ชาย หรือ จำเป็นที่จะต้องใช้ความพยายามทั้งๆที่ไม่อยากเป็น
+question-8-image : mid_00418887_001.5.jpg
+question-8-music : 6/pop.00097.20.wav
+question-8-description : การเดินขบวนอะไรบางอย่างที่เป็นเรื่องที่ดี
+question-9-image : AN1613004271_l.1.jpg
+question-9-music : 2/classical.00083.18.wav
+question-9-description : ความสูงส่งของสิ่งที่จับต้องไม่ได้
+question-10-image : mid_00759298_001.18.jpg
+question-10-music : 9/metal.00066.12.wav
+question-10-description : สถานที่ ๆ เคยเกิดสงคราม
+question-11-image : mid_00601788_001.14.jpg
+question-11-music : 5/jazz.00007.2.wav
+question-11-description : การโอ้อวดของคนรวย คนที่ถือรูปน่าจะเป็นคนเดียวกันกับในรูป
+question-12-image : mid_00759711_001.19.jpg
+question-12-music : 10/reggae.00055.10.wav
+question-12-description : การต่อสู้ชี้ชะตาครั้งสุดท้าย
+question-13-image : mid_00513096_001.7.jpg
+question-13-music : 8/disco.00032.10.wav
+question-13-description : การดูแลเด็กที่อยู่ในครอบครัวสูงส่ง มีความสะดวกสะบาย มีทาสคอยรับใช้
+question-14-image : mid_00546692_001.12.jpg
+question-14-music : 3/country.00042.10.wav
+question-14-description : วันหยุดพักร้อน การพักผ่อน
+question-15-image : mid_00219992_001.2.jpg
+question-15-music : 3/country.00015.4.wav
+question-15-description : ความเร้าร้อนของผู้ชายที่มีความต้องการ แต่ผู้หญิงเขินอาย เล่นตัว
+question-16-image : mid_00691974_001.17.jpg
+question-16-music : 8/disco.00000.1.wav
+question-16-description : หญิงสาวที่กำลังท่องเที่ยว ในป่าเขา
+question-17-image : mid_00834949_001.20.jpg
+question-17-music : 1/blues.00026.6.wav
+question-17-description : หญิงสาวที่ผ่านร้อนผ่านหนาวมา กำลังเล่นกับลูกของเธอ
+question-18-image : mid_00418829_001.4.jpg
+question-18-music : 5/jazz.00061.15.wav
+question-18-description : การเดินทางทะเลที่หรูหรา
+question-19-image : mid_00523667_001.9.jpg
+question-19-music : 10/reggae.00088.18.wav
+question-19-description : ทหารที่กำลังเดินทัพไปที่ไหนซักแห่ง
+question-20-image : mid_00527032_001.10.jpg
+question-20-music : 1/blues.00063.13.wav
+question-20-description : ผู้ชายที่รวย และ มีผู้หญิงหลายคน พวกเธอกำลังให้กำลังใจกับผู้ชายในรูปที่กำลังวาดรูปอยู่
+most-fav-music : 1
+most-fav-music-reason : ร่มรื่น สบาย ๆ เย็น ๆ
+least-fav-music : 10
+least-fav-music-reason : เพราะไม่เหมาะกับอารมณ์ของรูปภาพ

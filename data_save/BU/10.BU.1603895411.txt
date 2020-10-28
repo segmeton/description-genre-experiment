@@ -1,0 +1,66 @@
+user-id : 10
+question-1-image : AN1613004271_l.1.jpg
+question-1-music : 10/reggae.00023.4.wav
+question-1-description : ความชื่นชอบหลงไหล เหมือนกับชอบในศิลปะ หรือศาสนา
+question-2-image : mid_00423991_001.6.jpg
+question-2-music : 5/jazz.00035.13.wav
+question-2-description : ชนชั้นสูง ความสงบ ความสะดวกสบายเป็นระเบียบ แต่ก็ยังมีความว้าวุ่นใจอยู่
+question-3-image : mid_00418829_001.4.jpg
+question-3-music : 3/country.00062.13.wav
+question-3-description : งานสังสรรค์ ทางสังคมของกลุ่มคนที่เป็ฯเพื่อนกันมาตั่งแต่สมัยวัยรุ่น ความสนุนสนาน
+question-4-image : mid_00546692_001.12.jpg
+question-4-music : 1/blues.00098.20.wav
+question-4-description : การพักร้อน ความเป็นส่วนตัว การแสดงฐานะทางสังคมอย่างชัดเจน
+question-5-image : mid_00834949_001.20.jpg
+question-5-music : 9/metal.00066.12.wav
+question-5-description : ความสงสัยใคร่รู้ในตัวเด็กที่อุ้มอยู่
+question-6-image : mid_00327154_001.3.jpg
+question-6-music : 2/classical.00026.6.wav
+question-6-description : การที่คนในรูปต้องออกมาล่าปีศาจ แต่เหมือนกับว่า เป็นสิ่งที่ทำประจำจนเริ่มรู้สึกเบื่อ
+question-7-image : mid_00759711_001.19.jpg
+question-7-music : 8/disco.00089.18.wav
+question-7-description : การทะเลาะวิวาท ในเรื่องของศักศรี
+question-8-image : mid_00611816_001.16.jpg
+question-8-music : 5/jazz.00061.15.wav
+question-8-description : กลุ่มเพื่อนที่เริ่มจะมีอายุแล้ว ออกมาเดินเล่นข้างนอก
+question-9-image : mid_00588993_001.13.jpg
+question-9-music : 2/classical.00073.15.wav
+question-9-description : ผู้ชายในรูปมาเดินเล่นในสวนหลังบ้าน จากนั้นก็พบหัวของสาวรับใช้ตกอยู่
+question-10-image : mid_00691974_001.17.jpg
+question-10-music : 6/pop.00064.13.wav
+question-10-description : กลุ่มวัยรุ่นที่มีนิสัยค่อนข้างมีความมั่นใจในตัวเองสูง
+question-11-image : mid_00759298_001.18.jpg
+question-11-music : 7/rock.00075.13.wav
+question-11-description : เป็นภาพจากสายตาของชายผู้ที่อกหักมาจากความคาดหวังมาเที่ยวเพื่อพักใจ
+question-12-image : mid_00601788_001.14.jpg
+question-12-music : 3/country.00088.19.wav
+question-12-description : ชายผู้นี้คิดถึงคนคนนึงที่สนิทหรือรัก มากๆ คิดถึงช่วงเวลาดีๆที่มีร่วมกัน
+question-13-image : mid_00513096_001.7.jpg
+question-13-music : 6/pop.00049.10.wav
+question-13-description : ความเหนื่อยล้าของคุณแม่มือใหม่ กับช่วงที่เริ่มมีลูกแรกๆ ชีวิตเปลี่ยนไปจากเดิม
+question-14-image : mid_00513107_001.8.jpg
+question-14-music : 7/rock.00000.1.wav
+question-14-description : ชายใหม่หมวกในรูปเป็นผู้มีอำนาจสูงสุด มีความมั่นในสูง จะสั่งการอะไรก็ได้ตามใจชอบ
+question-15-image : mid_00527032_001.10.jpg
+question-15-music : 9/metal.00040.8.wav
+question-15-description : กลุ่มคนที่มีหน้าที่คอยควบคุมดูแลคน เป็นที่หวาดกลัวของผู้อื่น
+question-16-image : mid_00418887_001.5.jpg
+question-16-music : 4/hiphop.00054.8.wav
+question-16-description : กลุ่มคนที่มาจากละแวกบ้านเดียวกัน มีความชื่อชอบและจุดประสงเหมือนกัน ต้องการต่อสู้เพื่อผลประโยชน์ต่อหมู่บ้านตัวเอง
+question-17-image : mid_00219992_001.2.jpg
+question-17-music : 1/blues.00026.6.wav
+question-17-description : รักสามเศร้า ที่อาจจะต้องมีใครคนนึงต้องออกจากความสัมพันอันไม่ชัดเจนนี้ ความมนหมองในใจ ความคิดมาก และการสำรวจหาความต้องการของตัวเอง
+question-18-image : mid_00530983_001.11.jpg
+question-18-music : 10/reggae.00095.20.wav
+question-18-description : สองสามีภรรยา ที่มีความสุขกับการใช้ชีวิต แบบส่วนตัว ไม่ยุ่งเกี่ยวกับความวุ่นวาย ความภาคภูมิใจในสถานที่ที่อยู่
+question-19-image : mid_00602826_001.15.jpg
+question-19-music : 4/hiphop.00062.13.wav
+question-19-description : กลุ่มคนในรูป พยายามจะเรียกร้องความชอบธรรมให้กับกลุ่มตัวเอง แม้ว่าจะต้องสู้กับทางการก็ตาม
+question-20-image : mid_00523667_001.9.jpg
+question-20-music : 8/disco.00023.6.wav
+question-20-description : เหล่าชายในรูปที่ต้องต่อสู้เพื่อครอบครัวและคนที่รัก ไม่ว่าจะต้องแลกมาด้วยอะไรก็ตาม
+most-fav-music : 15
+most-fav-music-reason : อันนี้น่าจะเพราะชอบเพลงแนวนี้อยู่แล้ว
+least-fav-music : 5
+least-fav-music-reason : ผมว่าเพลงก็ดี
+แต่ก็ไม่เข้าใจว่ามันจะเข้ากับรูปตรงไหน
