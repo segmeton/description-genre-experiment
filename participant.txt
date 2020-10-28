@@ -2,13 +2,13 @@ Main
 1 Fajar
 2 Nowshin
 3 TJ
-4 Xincheng Dai (Bobby)
-5 Zhang
-6
-7
-8
-9 Fujimaki
-10 Toma
+4 Ebin
+5 Justin
+6 
+7 Zhang
+8 Xincheng Dai (Bobby)
+9 Tannop Sangvanloy
+10 Jaturawit Chaiwong
 
 Backup
 1
