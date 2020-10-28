@@ -1,0 +1,65 @@
+user-id : 8
+question-1-image : mid_00423991_001.6.jpg
+question-1-music : 3/country.00015.4.wav
+question-1-description : ทำให้นึกถึงผู้หญิง กลิ่นหอม ความงาม วิถีชีวิตของผู้หญิงชาวญี่ปุ่น
+question-2-image : mid_00523667_001.9.jpg
+question-2-music : 6/pop.00068.15.wav
+question-2-description : การเดินทาง อุปสรรค การผจญภัย
+question-3-image : mid_00546692_001.12.jpg
+question-3-music : 9/metal.00094.18.wav
+question-3-description : วิถีชีวิต ฐานันดร และการแบ่งชนชั้น
+question-4-image : mid_00513107_001.8.jpg
+question-4-music : 5/jazz.00079.19.wav
+question-4-description : การเต้นรำ ความงาม การพริ้วไสว กิจกรรมของหญิงสาว
+question-5-image : mid_00602826_001.15.jpg
+question-5-music : 2/classical.00074.16.wav
+question-5-description : ความวุ่นวาย การต่อสู้ การลักลอบ ความไม่หวังดี
+question-6-image : mid_00759298_001.18.jpg
+question-6-music : 5/jazz.00032.12.wav
+question-6-description : วิวทิวทัศน์ของภูเขาฟูจิ บรรยากาศ ความเย็น ความเงียบสงบ
+question-7-image : mid_00527032_001.10.jpg
+question-7-music : 7/rock.00075.13.wav
+question-7-description : ศิลปะ งานภาพ งานเขียนของชาวญี่ปุ่น งานศิลปะของผู้ชายที่จะสามารถไต่ถึง
+question-8-image : mid_00588993_001.13.jpg
+question-8-music : 10/reggae.00034.6.wav
+question-8-description : ความโกรธ เลือดจากในจินตนาการ ความเลือดเย็น ของสังคมชายเป็นใหญ่
+question-9-image : mid_00418829_001.4.jpg
+question-9-music : 1/blues.00074.14.wav
+question-9-description : กิจกรรม ความรื่นเริง การตกปลา งานอดิเรกของชนชั้นสูง
+question-10-image : mid_00691974_001.17.jpg
+question-10-music : 4/hiphop.00062.13.wav
+question-10-description : หน้าที่ การเก็บเกี่ยว สิ่งที่ต้องทำ และการจดจ่อ
+question-11-image : mid_00834949_001.20.jpg
+question-11-music : 7/rock.00005.3.wav
+question-11-description : ภาพแสดงของการมีชีวิต วิถีชีวิตของผู้หญิงและคงามเป็นแม่
+question-12-image : mid_00418887_001.5.jpg
+question-12-music : 2/classical.00073.15.wav
+question-12-description : ให้กลิ่นอายของงานเทศกาล ประเพณี งานสังสรรค์ ที่มีผู้คนมากหน้าหลายตา
+question-13-image : mid_00601788_001.14.jpg
+question-13-music : 1/blues.00059.11.wav
+question-13-description : ความโดดเด่น ความสงสัย การตั้งคำถาม
+question-14-image : mid_00327154_001.3.jpg
+question-14-music : 10/reggae.00060.12.wav
+question-14-description : ทำให้นึกถึงการผจญภัยของชายคนหนึ่ง การปราบผีและปีศาจ ที่มีความกล้าหาญ โดดเดี่ยว และบ้าบิ่น 
+question-15-image : mid_00530983_001.11.jpg
+question-15-music : 8/disco.00000.1.wav
+question-15-description : วิถีชีวิต ผู้คน ความว่างเปล่าในใจ ความรับผิดชอบ ชนบท
+question-16-image : mid_00513096_001.7.jpg
+question-16-music : 4/hiphop.00062.13.wav
+question-16-description : การละเล่น สังคม การสังสรรค์ เมื่อมนุษย์เป็นสัตว์สังคม
+question-17-image : AN1613004271_l.1.jpg
+question-17-music : 8/disco.00008.2.wav
+question-17-description : ภูติผี ความเชื่อ การถูกปลดปล่อย
+question-18-image : mid_00219992_001.2.jpg
+question-18-music : 9/metal.00052.9.wav
+question-18-description : ความอึดอัด การเป็นเจ้าของ ความสงสัย
+question-19-image : mid_00759711_001.19.jpg
+question-19-music : 6/pop.00018.3.wav
+question-19-description : การต่อสู้ แย่งชิง ฟาดฟันกันของชายชาวญี่ปุ่น
+question-20-image : mid_00611816_001.16.jpg
+question-20-music : 3/country.00015.4.wav
+question-20-description : ความงาม หญิงสาว ความใคร่หลง กลุ่มหญิงสาวมาพบปะรื่นเริง
+most-fav-music : 1
+most-fav-music-reason : ให้ความรู้สึกรื่นเริง สนุกสนาน สบายใจ และอบอุ่นกับความcountry
+least-fav-music : 18
+least-fav-music-reason : เพลงมันหนักเกินไป และทำให้รู้สึกอึดอัดและฟังแล้วไม่สบายหู
