@@ -2,7 +2,11 @@
 
 $input_data = $_POST;
 
-$filename = $input_data["user-id"] . '.BU.' . time() . '.txt';
+// BU = Bangkok University
+// ICE = ICE Lab
+$session = '.BU.'
+
+$filename = $input_data["user-id"] . $session . time() . '.txt';
 
 $myfile = fopen('raw_data/' . $filename, "w") or die("Unable to open file!");
 foreach ($input_data as $key => $value)
