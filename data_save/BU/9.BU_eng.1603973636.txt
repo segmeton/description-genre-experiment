@@ -1,0 +1,67 @@
+user-id : 9
+question-1-image : mid_00527032_001.10.jpg
+question-1-music : 8/disco.00098.20.wav
+question-1-description : A man is painting with his passion while the woman is watching.
+question-2-image : mid_00513096_001.7.jpg
+question-2-music : 5/jazz.00087.20.wav
+question-2-description : Kids playing together with joyfulness.
+question-3-image : mid_00418887_001.5.jpg
+question-3-music : 3/country.00084.18.wav
+question-3-description : รถแห่สมัยเก่า
+Japan's Carnival!!!
+question-4-image : mid_00601788_001.14.jpg
+question-4-music : 2/classical.00042.7.wav
+question-4-description : A man showing someone a picture that he is proud of.
+question-5-image : mid_00759298_001.18.jpg
+question-5-music : 6/pop.00010.2.wav
+question-5-description : Musing
+question-6-image : mid_00834949_001.20.jpg
+question-6-music : 8/disco.00089.18.wav
+question-6-description : The kid is a burden to the women.
+question-7-image : mid_00327154_001.3.jpg
+question-7-music : 1/blues.00013.4.wav
+question-7-description : Dancing
+question-8-image : mid_00530983_001.11.jpg
+question-8-music : 9/metal.00078.16.wav
+question-8-description : ผู้หญิงสู้ชีวิต
+question-9-image : AN1613004271_l.1.jpg
+question-9-music : 9/metal.00000.1.wav
+question-9-description : crazy for the thing on the right side of the image.
+question-10-image : mid_00546692_001.12.jpg
+question-10-music : 10/reggae.00058.11.wav
+question-10-description : Beach side life.
+question-11-image : mid_00602826_001.15.jpg
+question-11-music : 3/country.00064.14.wav
+question-11-description : Losses.
+question-12-image : mid_00588993_001.13.jpg
+question-12-music : 1/blues.00000.1.wav
+question-12-description : He is definitely drunk.
+question-13-image : mid_00423991_001.6.jpg
+question-13-music : 4/hiphop.00096.20.wav
+question-13-description : She is make-up for some event.
+question-14-image : mid_00691974_001.17.jpg
+question-14-music : 5/jazz.00028.10.wav
+question-14-description : joyfulness
+question-15-image : mid_00611816_001.16.jpg
+question-15-music : 4/hiphop.00092.18.wav
+question-15-description : moving, dancing
+question-16-image : mid_00759711_001.19.jpg
+question-16-music : 7/rock.00016.5.wav
+question-16-description : Furious
+question-17-image : mid_00219992_001.2.jpg
+question-17-music : 10/reggae.00034.6.wav
+question-17-description : denied 
+เหย้าหยอก
+question-18-image : mid_00418829_001.4.jpg
+question-18-music : 2/classical.00009.2.wav
+question-18-description : Get something that's precious
+question-19-image : mid_00523667_001.9.jpg
+question-19-music : 7/rock.00058.7.wav
+question-19-description : Attempt
+question-20-image : mid_00513107_001.8.jpg
+question-20-music : 6/pop.00049.10.wav
+question-20-description : Sadness
+most-fav-music : 2
+most-fav-music-reason : The song called " Moanin". Great song even it's not the bebop version.
+least-fav-music : 1
+least-fav-music-reason : Actually, there is no song that I don't like.

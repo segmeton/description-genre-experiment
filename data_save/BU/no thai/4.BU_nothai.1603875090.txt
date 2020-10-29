@@ -16,7 +16,7 @@ question-5-music : 5/jazz.00018.7.wav
 question-5-description : 
 question-6-image : mid_00601788_001.14.jpg
 question-6-music : 7/rock.00092.20.wav
-question-6-description : สื
+question-6-description : 
 question-7-image : mid_00513107_001.8.jpg
 question-7-music : 1/blues.00018.5.wav
 question-7-description : 

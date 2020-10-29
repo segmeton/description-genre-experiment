@@ -65,6 +65,7 @@ for root, dirs, files in os.walk(data_path):
                 if(len(match2.group()) > 2):
                     fav_data.append(match2.group(2))
 
+        # print(question_data)
         # get genre for this question
         most_fav_genre = question_data[int(fav_data[0])-1]
         least_fav_genre = question_data[int(fav_data[2])-1]
@@ -80,16 +81,18 @@ for root, dirs, files in os.walk(data_path):
             data_dict["image-"+str(data[1])+"-music"] = data[4]
 
         # put fav data to dictionary
-        data_dict["most-fav-music"] = most_fav_genre[3]
+        data_dict["most-fav-music-genre"] = most_fav_genre[3]
+        data_dict["most-fav-music"] = most_fav_genre[4]
         data_dict["most-fav-music-reason"] = fav_data[1]
-        data_dict["least-fav-music"] = least_fav_genre[3]
+        data_dict["least-fav-music-genre"] = least_fav_genre[3]
+        data_dict["least-fav-music"] = least_fav_genre[4]
         data_dict["least-fav-music-reason"] = fav_data[3]
 
         f.close()
 
         data_list.append(data_dict)
 
-print(data_list)
+# print(data_list)
 # getting timestamp
 ts = time.time()
 
@@ -102,7 +105,7 @@ with open(csv_name, 'w', newline='') as csvfile:
     for i in range(n):
         fieldnames.extend(["image-"+str(i+1)+"-qid", "image-"+str(i+1)+"-desc", "image-"+str(i+1)+"-music-genre", "image-"+str(i+1)+"-music"])
 
-    fieldnames.extend(["most-fav-music", "most-fav-music-reason", "least-fav-music", "least-fav-music-reason"])
+    fieldnames.extend(["most-fav-music-genre", "most-fav-music", "most-fav-music-reason", "least-fav-music-genre",  "least-fav-music", "least-fav-music-reason"])
     
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
