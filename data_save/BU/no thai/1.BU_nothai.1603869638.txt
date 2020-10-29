@@ -1,0 +1,65 @@
+user-id : 1
+question-1-image : mid_00834949_001.20.jpg
+question-1-music : 10/reggae.00067.13.wav
+question-1-description : 
+question-2-image : mid_00601788_001.14.jpg
+question-2-music : 4/hiphop.00074.16.wav
+question-2-description : 
+question-3-image : mid_00513096_001.7.jpg
+question-3-music : 7/rock.00070.12.wav
+question-3-description : 
+question-4-image : mid_00588993_001.13.jpg
+question-4-music : 3/country.00042.10.wav
+question-4-description : 
+question-5-image : mid_00418829_001.4.jpg
+question-5-music : 4/hiphop.00062.13.wav
+question-5-description : 
+question-6-image : mid_00527032_001.10.jpg
+question-6-music : 10/reggae.00074.15.wav
+question-6-description : 
+question-7-image : mid_00513107_001.8.jpg
+question-7-music : 8/disco.00089.18.wav
+question-7-description : 
+question-8-image : mid_00327154_001.3.jpg
+question-8-music : 3/country.00068.15.wav
+question-8-description : 
+question-9-image : mid_00219992_001.2.jpg
+question-9-music : 2/classical.00071.14.wav
+question-9-description : 
+question-10-image : mid_00759298_001.18.jpg
+question-10-music : 8/disco.00016.3.wav
+question-10-description : 
+question-11-image : mid_00759711_001.19.jpg
+question-11-music : 9/metal.00062.10.wav
+question-11-description : 
+question-12-image : mid_00418887_001.5.jpg
+question-12-music : 5/jazz.00013.5.wav
+question-12-description : 
+question-13-image : mid_00611816_001.16.jpg
+question-13-music : 6/pop.00039.8.wav
+question-13-description : 
+question-14-image : mid_00691974_001.17.jpg
+question-14-music : 7/rock.00064.10.wav
+question-14-description : 
+question-15-image : mid_00546692_001.12.jpg
+question-15-music : 2/classical.00013.3.wav
+question-15-description : 
+question-16-image : mid_00523667_001.9.jpg
+question-16-music : 9/metal.00099.20.wav
+question-16-description : 
+question-17-image : mid_00530983_001.11.jpg
+question-17-music : 1/blues.00038.8.wav
+question-17-description : 
+question-18-image : AN1613004271_l.1.jpg
+question-18-music : 1/blues.00026.6.wav
+question-18-description : 
+question-19-image : mid_00602826_001.15.jpg
+question-19-music : 5/jazz.00079.19.wav
+question-19-description : 
+question-20-image : mid_00423991_001.6.jpg
+question-20-music : 6/pop.00049.10.wav
+question-20-description : 
+most-fav-music : 2
+most-fav-music-reason : 
+least-fav-music : 4
+least-fav-music-reason : 

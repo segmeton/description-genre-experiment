@@ -14,15 +14,16 @@ question_data = [ [ 0 for child_arr in range(5) ] for parent_arr in range(n) ]
 # generate empty array for image favorite data
 fav_data = []
 
-# create dictionary for data that will be put to csv
-data_dict = {}
-
 for root, dirs, files in os.walk(data_path):
     
     for filename in files:
-        # print(filename)
+
+        # create dictionary for data that will be put to csv
+        data_dict = {}
+
         # 1.BU.1603804561.txt
         splits = filename.split('.')
+        # print(splits[0])
 
         data_dict["group"] = splits[0]
         data_dict["session"] = splits[1]
@@ -30,13 +31,17 @@ for root, dirs, files in os.walk(data_path):
 
         path = os.path.join(root, filename)
 
-        f = open(path, "r")
+        # for english
+        f = open(path, "r", encoding="utf8")
 
         reader = csv.reader(f)
         next(reader)
         
         for row in reader:
-            match_question_img = re.search(r"question-(\d*)-(\w*) : (\S*)']", str(row))
+            string = str(row)
+            content = string[2:len(string)-2]
+            match_question_img = re.search(r"question-(\d*)-(\w*) : (.*)", content)
+            # print(content)
             if match_question_img:
                 # put all image question data into question_data to be processed later
                 qid = int(match_question_img.group(1))
@@ -47,15 +52,18 @@ for root, dirs, files in os.walk(data_path):
                     match_img = re.search(r'\w*.(\d*).\w*', q_value)
                     question_data[qid-1][1] = int(match_img.group(1))
                 elif(q_key == 'music'):
-                    match_music = re.search(r"\d*/((\w*).(\S*))']", str(row))
+                    match_music = re.search(r"\d*/((\w*).(\S*))", content)
                     question_data[qid-1][3] = match_music.group(2)
                     question_data[qid-1][4] = match_music.group(1)
                 elif(q_key == 'description'):
                     question_data[qid-1][2] = q_value
             else:
                 # put all favorite question data into fav_data to be processed later
-                match2 = re.search(r"(\w*)-fav-music\S* : (\S*)']", str(row))
-                fav_data.append(match2.group(2))
+                match2 = re.search(r"(\w*)-fav-music\S* : (.*)", content)
+                # print(content)
+                # print(match2)
+                if(len(match2.group()) > 2):
+                    fav_data.append(match2.group(2))
 
         # get genre for this question
         most_fav_genre = question_data[int(fav_data[0])-1]
@@ -81,6 +89,7 @@ for root, dirs, files in os.walk(data_path):
 
         data_list.append(data_dict)
 
+print(data_list)
 # getting timestamp
 ts = time.time()
 
