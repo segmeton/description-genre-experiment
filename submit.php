@@ -4,13 +4,15 @@ $input_data = $_POST;
 
 // BU = Bangkok University
 // ICE = ICE Lab
-$session_id = 'BU';
+$session_id = 'TEST';
 
 $time = time();
 
 $filename = implode(".", array($input_data["user-id"], $session_id, $time)); 
 $data = array();
 $favorite = array();
+
+//question-1-music-rating
 
 $txt_file = fopen('raw_data/' . $filename . '.txt', "w") or die("Unable to open file!");
 foreach ($input_data as $key => $value)
@@ -34,12 +36,15 @@ foreach ($input_data as $key => $value)
             case "music":
                 $re_music = "/\d*\/((\w*).(\S*))/";
                 $valid_music = preg_match_all($re_music, $value, $music_match);
-                
-                $music_array = array(
-                    "genre" => $music_match[2][0],
-                    "file" => $music_match[1][0]   
-                );
-                $data[$match[1][0]]["music"] = $music_array;
+                if($valid_music){
+                    $music_array = array(
+                        "genre" => $music_match[2][0],
+                        "file" => $music_match[1][0]   
+                    );
+                    $data[$match[1][0]]["music"] = $music_array;
+                }else{
+                    $data[$match[1][0]]["music"]["rating"] = $value;
+                }
                 break;
             case "description":
                 $data[$match[1][0]]["desc"] = $value;
@@ -78,12 +83,14 @@ $final_fav = array(
     "most" => array(
         "genre" => $most_fav_music["genre"],
         "file" => $most_fav_music["file"],
-        "reason" => $favorite["most"]["reason"]
+        "reason" => $favorite["most"]["reason"],
+        "rating" => $most_fav_music["rating"]
     ),
     "least" => array(
         "genre" => $least_fav_music["genre"],
         "file" => $least_fav_music["file"],
-        "reason" => $favorite["least"]["reason"]
+        "reason" => $favorite["least"]["reason"],
+        "rating" => $least_fav_music["rating"]
     )
 );
 
@@ -100,9 +107,12 @@ foreach($data as $key => $value){
 ksort($final_data);
 
 $final = array(
-    "group" => $input_data["user-id"],
+    "uid" => $input_data["user-id"],
     "session" => $session_id,
     "timestamp" => $time,
+    "age" => $input_data["age"],
+    "familiarity" => $input_data["familiarity"],
+    "gender" => $input_data["gender"],
     "data" => $final_data,
     "favorite" => $final_fav
 );

@@ -115,16 +115,72 @@ if(isset($_GET['uid'])){
                         </div>
                     </div>
 
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Question 1</h5>
+                            <p class="card-text">
+                                <div class="form-group">
+                                    <label for="familiarity">From 1(Lowest) to 5(Highest), how familiar are you with ukiyo-e?</label>
+                                    <fieldset id="familiarity">
+                                        <?php for($i = 1; $i <= 5; $i++){ ?>
+
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="familiarity-<?php echo $i ?>" name="familiarity" class="custom-control-input" value="<?php echo $i ?>" required>
+                                            <label class="custom-control-label" for="familiarity-<?php echo $i ?>"><?php echo $i ?></label>
+                                        </div>
+
+                                        <?php } ?>
+                                    </fieldset>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Question 2</h5>
+                            <p class="card-text">
+                                <div class="form-group">
+                                    <label for="age">What is your age?</label>
+                                    <input type="number" class="form-control" id="age" name="age" min="1" max="120" required>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Question 3</h5>
+                            <p class="card-text">
+                                <div class="form-group">
+                                    <label for="gender">What is your gender?</label>
+                                    <fieldset id="gender">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="gender-male" name="gender" class="custom-control-input" value="Male" required>
+                                            <label class="custom-control-label" for="gender-male">Male</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="gender-female" name="gender" class="custom-control-input"  value="Female" required>
+                                            <label class="custom-control-label" for="gender-female">Female</label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    
                     <?php foreach($user_laten_pair as $key => $pair){ ?>
+
+                    <?php $question_number = $key + 4; ?>
                     
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-md-6 col-sm-12">
-                                <img src="img/<?php echo $image_set[$pair[0]-1]; ?>" class="card-img" alt="" data-toggle="modal" data-target="#image-modal" data-image="img/<?php echo $image_set[$pair[0]-1]; ?>" data-title="Question <?php echo $key+1; ?>">
+                                <img src="img/<?php echo $image_set[$pair[0]-1]; ?>" class="card-img" alt="" data-toggle="modal" data-target="#image-modal" data-image="img/<?php echo $image_set[$pair[0]-1]; ?>" data-title="Question <?php echo $question_number; ?>">
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="card-body">
-                                    <h5 class="card-title">Question <?php echo $key+1; ?></h5>
+                                    <h5 class="card-title">Question <?php echo $question_number; ?></h5>
                                     <p class="card-text">Please <strong class="text-danger">describe</strong> the image on this question <strong class="text-danger">after</strong> listening to the music below for at least 30s.</p>
                                     <p class="card-text">
                                         <audio controls loop>
@@ -134,10 +190,25 @@ if(isset($_GET['uid'])){
                                     </p>
                                     <p class="card-text">
                                         <div class="form-group">
-                                            <input type="hidden" id="question-<?php echo $key+1; ?>-image" name="question-<?php echo $key+1; ?>-image" value="<?php echo $image_set[$pair[0]-1]; ?>">
-                                            <input type="hidden" id="question-<?php echo $key+1; ?>-music" name="question-<?php echo $key+1; ?>-music" value="<?php echo $music_set_all[$pair[1]-1]; ?>">
-                                            <label for="question-<?php echo $key+1; ?>-description">Please Describe the image in this question.</label>
-                                            <textarea class="form-control" name="question-<?php echo $key+1; ?>-description" id="question-<?php echo $key+1; ?>-description" rows="3" required></textarea>
+                                            <input type="hidden" id="question-<?php echo $question_number; ?>-image" name="question-<?php echo $question_number; ?>-image" value="<?php echo $image_set[$pair[0]-1]; ?>">
+                                            <input type="hidden" id="question-<?php echo $question_number; ?>-music" name="question-<?php echo $question_number; ?>-music" value="<?php echo $music_set_all[$pair[1]-1]; ?>">
+                                            <label for="question-<?php echo $question_number; ?>-description">Please Describe the image in this question.</label>
+                                            <textarea class="form-control" name="question-<?php echo $question_number; ?>-description" id="question-<?php echo $question_number; ?>-description" rows="3" required></textarea>
+                                            
+                                            <label for="question-<?php echo $question_number; ?>-music-rating">From 1(Lowest) to 5(Highest), how much you like the music</label>
+                                            <fieldset id="question-<?php echo $question_number; ?>-music-rating">
+
+                                                <?php for($i = 1; $i <= 5; $i++){ ?>
+
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="question-<?php echo $question_number; ?>-music-rating-<?php echo $i ?>" name="question-<?php echo $question_number; ?>-music-rating" class="custom-control-input" value="<?php echo $i ?>" required>
+                                                    <label class="custom-control-label" for="question-<?php echo $question_number; ?>-music-rating-<?php echo $i ?>"><?php echo $i ?></label>
+                                                </div>
+
+                                                <?php } ?>
+                                                
+
+                                            </fieldset>
                                         </div>
                                     </p>
                                 </div>
@@ -149,11 +220,11 @@ if(isset($_GET['uid'])){
 
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Question <?php echo $count+1; ?></h5>
+                            <h5 class="card-title">Question <?php echo $count+4; ?></h5>
                             <p class="card-text">
                                 <div class="form-group">
                                     <label for="most-fav-music">Please tell us <strong class="text-danger">music on which question</strong> you <strong class="text-danger">like</strong> the most</label>
-                                    <input type="number" class="form-control" id="most-fav-music" name="most-fav-music" min="1" max="20" required>
+                                    <input type="number" class="form-control" id="most-fav-music" name="most-fav-music" min="4" max="23" required>
                                     <label for="most-fav-music-reason">Please tell us your reason (if any).</label>
                                     <textarea class="form-control" name="most-fav-music-reason" id="most-fav-music-reason" rows="3"></textarea>
                                 </div>
@@ -163,11 +234,11 @@ if(isset($_GET['uid'])){
 
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Question <?php echo $count+2; ?></h5>
+                            <h5 class="card-title">Question <?php echo $count+5; ?></h5>
                             <p class="card-text">
                                 <div class="form-group">
                                     <label for="least-fav-music">Please tell us <strong class="text-danger">music on which question</strong> you <strong class="text-danger">do not like</strong> the most</label>
-                                    <input type="number" class="form-control" id="least-fav-music" name="least-fav-music" min="1" max="20" required>
+                                    <input type="number" class="form-control" id="least-fav-music" name="least-fav-music" min="4" max="23" required>
                                     <label for="least-fav-music-reason">Please tell us your reason (if any).</label>
                                     <textarea class="form-control" name="least-fav-music-reason" id="least-fav-music-reason" rows="3"></textarea>
                                 </div>
